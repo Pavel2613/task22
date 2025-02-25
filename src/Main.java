@@ -1,18 +1,14 @@
 public class Main {
     public static void main(String[] args) {
 
-        int InitialBalance = 0; // начальный баланс
+        int initialBalance = 100; // начальный баланс
         int coming = 1100; // пополнение баланса
-        int bonus; // кол-во бонусов
-        if (coming > 1000){
-            bonus = coming / 100;
-        } else {
-            bonus = 0;
-        }
-        int TotalAmount = InitialBalance + coming + bonus;
+        int bonus = coming > 1000 ? coming / 100 : 0;
 
-        System.out.println("Ваш баланс составляет: " + TotalAmount);
-        System.out.println("Начислено бонусов: " + bonus);
+    int totalAmount = initialBalance + coming + bonus;
 
-    }
+        System.out.println("Ваш баланс составляет: "+totalAmount);
+        System.out.println("Начислено бонусов: "+bonus);
+
+}
 }
