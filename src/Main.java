@@ -5,10 +5,10 @@ public class Main {
         int coming = 1100; // пополнение баланса
         int bonus = coming > 1000 ? coming / 100 : 0;
 
-    int totalAmount = initialBalance + coming + bonus;
+        int totalAmount = initialBalance + coming + bonus;
 
-        System.out.println("Ваш баланс составляет: "+totalAmount);
-        System.out.println("Начислено бонусов: "+bonus);
+        System.out.println("Ваш баланс составляет: " + totalAmount);
+        System.out.println("Начислено бонусов: " + bonus);
 
-}
+    }
 }
